@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Burare Flavors - Authentic Rwandan cuisine in Huye District, Burare Town. Fresh, local ingredients with modern presentation.">
+    <meta name="keywords" content="Rwandan restaurant, Burare Town, Huye District, local cuisine, grilled meats, plantains">
+    <meta name="author" content="Burare Flavors Restaurant">
+    <title>Burare Flavors - Authentic Rwandan Cuisine | Huye District</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Added Font Awesome CDN for real icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Burare Flavors</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#services" class="nav-link" data-section="services">Menu</a></li>
+                <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link" data-section="testimonials">Reviews</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                <li>
+                    <button class="cart-btn" id="cart-btn" aria-label="Shopping cart">
+                        <!-- Replaced emoji with Font Awesome shopping cart icon -->
+                        <i class="fas fa-shopping-cart"></i> <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero-slider">
+                <div class="slide active">
+                    <img src="/public/beautiful-restaurant-interior-with-traditional-rwa.png?height=600&width=1200" alt="Burare Flavors restaurant exterior">
+                    <div class="slide-content">
+                        <h1>Welcome to Burare Flavors</h1>
+                        <p>Authentic Rwandan cuisine with a modern twist</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/public/elegant-plated-dish-with-grilled-meat--vegetables-.png?height=600&width=1200" alt="Traditional Rwandan grilled meat dish">
+                    <div class="slide-content">
+                        <h1>Fresh Local Ingredients</h1>
+                        <p>Grilled meats, plantains, and aromatic spices</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/public/happy-customers-enjoying-meal-at-outdoor-terrace-w.png?height=600&width=1200" alt="Restaurant interior ambiance">
+                    <div class="slide-content">
+                        <h1>Warm Rwandan Hospitality</h1>
+                        <p>Experience the heart of Burare Town</p>
+                    </div>
+                </div>
+                <!-- Replaced arrow symbols with Font Awesome chevron icons -->
+                <button class="slider-btn prev" id="prev-btn" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next" id="next-btn" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+            
+            <div class="welcome-section">
+                <div class="container">
+                    <div class="welcome-content">
+                        <h2>Our Story</h2>
+                        <p>Nestled in the heart of Burare Town, Huye District, Rwanda, Burare Flavors brings you the authentic taste of Rwanda with a contemporary presentation. Our commitment to fresh, local ingredients and traditional cooking methods creates an unforgettable dining experience that celebrates Rwandan hospitality.</p>
+                        <button class="cta-btn" id="order-now-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Burare Flavors</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Located in the vibrant Burare Town of Huye District, Rwanda, Burare Flavors has been serving authentic Rwandan cuisine since our founding. We pride ourselves on sourcing the finest local ingredients and supporting our community farmers.</p>
+                        <p>Our commitment extends beyond great food - we're dedicated to preserving Rwandan culinary traditions while embracing modern cooking techniques to create memorable dining experiences.</p>
+                    </div>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.123456789!2d29.7394!3d-2.6089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMzYnMzIuMCJTIDI5wrA0NCcyMS44IkU!5e0!3m2!1sen!2srw!4v1234567890"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Burare Flavors location in Huye District, Rwanda">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="timeline">
+                    <h3>Our Journey</h3>
+                    <div class="timeline-item" data-year="2018">
+                        <div class="timeline-content">
+                            <h4>Restaurant Founded</h4>
+                            <p>Opened our doors in Burare Town with a vision to showcase authentic Rwandan flavors.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2020">
+                        <div class="timeline-content">
+                            <h4>Community Partnership</h4>
+                            <p>Established partnerships with local farmers to source fresh, organic ingredients.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2022">
+                        <div class="timeline-content">
+                            <h4>Menu Expansion</h4>
+                            <p>Introduced modern interpretations of traditional dishes while maintaining authentic flavors.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2024">
+                        <div class="timeline-content">
+                            <h4>Online Ordering</h4>
+                            <p>Launched digital platform to serve our community with convenient ordering options.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services/Menu Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">Our Menu</h2>
+                <div class="menu-categories">
+                    <button class="category-btn active" data-category="all">All Items</button>
+                    <button class="category-btn" data-category="appetizers">Appetizers</button>
+                    <button class="category-btn" data-category="mains">Main Dishes</button>
+                    <button class="category-btn" data-category="desserts">Desserts</button>
+                    <button class="category-btn" data-category="drinks">Drinks</button>
+                </div>
+                
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Menu items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Gallery items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial-container" id="testimonial-container">
+                        <!-- Testimonials will be populated by JavaScript -->
+                    </div>
+                    <!-- Replaced arrow symbols with Font Awesome chevron icons -->
+                    <button class="testimonial-btn prev" id="testimonial-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <button class="testimonial-btn next" id="testimonial-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <!-- Replaced emoji with Font Awesome location icon -->
+                            <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                            <p>Burare Town, Huye District<br>Southern Province, Rwanda</p>
+                        </div>
+                        <div class="contact-item">
+                            <!-- Replaced emoji with Font Awesome phone icon -->
+                            <h3><i class="fas fa-phone"></i> Phone</h3>
+                            <p>+250 788 123 456</p>
+                        </div>
+                        <div class="contact-item">
+                            <!-- Replaced emoji with Font Awesome envelope icon -->
+                            <h3><i class="fas fa-envelope"></i> Email</h3>
+                            <p>info@burareflavors.rw</p>
+                        </div>
+                        <div class="contact-item">
+                            <!-- Replaced emoji with Font Awesome clock icon -->
+                            <h3><i class="fas fa-clock"></i> Hours</h3>
+                            <p>Mon-Sun: 8:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-forms">
+                        <form class="contact-form" id="contact-form">
+                            <h3>Send us a Message</h3>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                        
+                        <form class="reservation-form" id="reservation-form">
+                            <h3>Reserve a Table</h3>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="tel" name="phone" placeholder="Phone Number" required>
+                            <input type="date" name="date" required>
+                            <input type="time" name="time" required>
+                            <input type="number" name="guests" placeholder="Number of Guests" min="1" max="20" required>
+                            <button type="submit">Reserve Table</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-container" id="faq-container">
+                        <!-- FAQ items will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Burare Flavors</h3>
+                    <p>Authentic Rwandan cuisine in the heart of Burare Town</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <!-- Replaced emojis with Font Awesome social media icons -->
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Burare Flavors. All rights reserved. | Huye District, Rwanda</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Order Modal -->
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <!-- Replaced × symbol with Font Awesome times icon -->
+            <span class="close" id="close-order-modal"><i class="fas fa-times"></i></span>
+            <h2>Place Your Order</h2>
+            <form id="order-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <textarea name="order" placeholder="Order Details" rows="4" required></textarea>
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <!-- Replaced × symbol with Font Awesome times icon -->
+            <span class="close" id="close-cart-modal"><i class="fas fa-times"></i></span>
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>Total: <span id="cart-total">0</span> RWF</strong>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <!-- Replaced × symbol with Font Awesome times icon -->
+        <span class="lightbox-close" id="lightbox-close"><i class="fas fa-times"></i></span>
+        <img class="lightbox-img" id="lightbox-img" alt="Gallery image">
+        <!-- Replaced arrow symbols with Font Awesome chevron icons -->
+        <button class="lightbox-btn prev" id="lightbox-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-btn next" id="lightbox-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
