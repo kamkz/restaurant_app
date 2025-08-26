@@ -42,7 +42,7 @@ const menuItems = [
     category: "mains",
     price: 8500,
     description: "Tender beef marinated in local spices, grilled to perfection with plantains",
-    image: "./public/grilled-beef-skewers-with-plantains-on-wooden-plat.png",
+    image: "./assets/grilled-beef-skewers-with-plantains-on-wooden-plat.png",
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ const menuItems = [
     category: "appetizers",
     price: 3500,
     description: "Traditional mushroom soup with local herbs and vegetables",
-    image: "/public/traditional-rwandan-mushroom-soup-in-clay-bowl-wit.png",
+    image: "/assets/traditional-rwandan-mushroom-soup-in-clay-bowl-wit.png",
   },
   {
     id: 3,
@@ -58,7 +58,7 @@ const menuItems = [
     category: "drinks",
     price: 2000,
     description: "Traditional Rwandan milk tea with honey and local spices",
-    image: "/public/traditional-rwandan-milk-tea-in-ceramic-cup-with-h.png",
+    image: "/assets/traditional-rwandan-milk-tea-in-ceramic-cup-with-h.png",
   },
   {
     id: 4,
@@ -66,7 +66,7 @@ const menuItems = [
     category: "desserts",
     price: 4000,
     description: "Sweet honey cake made with local honey and traditional methods",
-    image: "/public/traditional-rwandan-honey-cake-slice-on-wooden-pla.png",
+    image: "/assets/traditional-rwandan-honey-cake-slice-on-wooden-pla.png",
   },
   {
     id: 5,
@@ -74,7 +74,7 @@ const menuItems = [
     category: "mains",
     price: 9500,
     description: "Mixed grilled meats with seasonal vegetables and ugali",
-    image: "/public/mixed-grilled-meats-with-vegetables-and-ugali-on-t.png",
+    image: "/assets/mixed-grilled-meats-with-vegetables-and-ugali-on-t.png",
   },
   {
     id: 6,
@@ -82,7 +82,7 @@ const menuItems = [
     category: "appetizers",
     price: 2500,
     description: "Roasted sweet potatoes with butter and local herbs",
-    image: "/public/roasted-sweet-potatoes-with-herbs-on-rustic-plate.png",
+    image: "/assets/roasted-sweet-potatoes-with-herbs-on-rustic-plate.png",
   },
   {
     id: 7,
@@ -90,7 +90,7 @@ const menuItems = [
     category: "drinks",
     price: 3000,
     description: "Traditional fermented banana beverage, mildly alcoholic",
-    image: "/public/traditional-rwandan-banana-beer-in-gourd-cup.png",
+    image: "/assets/traditional-rwandan-banana-beer-in-gourd-cup.png",
   },
   {
     id: 8,
@@ -98,34 +98,34 @@ const menuItems = [
     category: "desserts",
     price: 3500,
     description: "Fresh local fruits with honey and mint",
-    image: "/public/fresh-tropical-fruit-salad-with-honey-and-mint-in-.png",
+    image: "/assets/fresh-tropical-fruit-salad-with-honey-and-mint-in-.png",
   },
 ]
 
 // Gallery Data
 const galleryImages = [
   {
-    src: "/public/beautiful-restaurant-interior-with-traditional-rwa.png",
+    src: "/assets/beautiful-restaurant-interior-with-traditional-rwa.png",
     alt: "Restaurant interior",
   },
   {
-    src: "/public/chef-preparing-traditional-rwandan-grilled-meat-ov.png",
+    src: "/assets/chef-preparing-traditional-rwandan-grilled-meat-ov.png",
     alt: "Chef preparing food",
   },
   {
-    src: "/public/colorful-display-of-fresh-local-vegetables-and-spi.png",
+    src: "/assets/colorful-display-of-fresh-local-vegetables-and-spi.png",
     alt: "Fresh ingredients",
   },
   {
-    src: "/public/happy-customers-enjoying-meal-at-outdoor-terrace-w.png",
+    src: "/assets/happy-customers-enjoying-meal-at-outdoor-terrace-w.png",
     alt: "Happy customers",
   },
   {
-    src: "/public/traditional-rwandan-cooking-pots-and-utensils-in-r.png",
+    src: "/assets/traditional-rwandan-cooking-pots-and-utensils-in-r.png",
     alt: "Traditional cooking",
   },
   {
-    src: "/public/elegant-plated-dish-with-grilled-meat--vegetables-.png",
+    src: "/assets/elegant-plated-dish-with-grilled-meat--vegetables-.png",
     alt: "Plated dish",
   },
 ]
@@ -134,27 +134,27 @@ const galleryImages = [
 const testimonials = [
   {
     name: "Marie Uwimana",
-    image: "/public/smiling-rwandan-woman-in-traditional-dress.png",
+    image: "/assets/smiling-rwandan-woman-in-traditional-dress.png",
     quote: "The best traditional food in Huye District! The grilled meat reminds me of my grandmother's cooking.",
   },
   {
     name: "Lelia Kayiranga Kamikazi",
-    image: "/public/1.jpg",
+    image: "/assets/1.jpg",
     quote: "Butare Flavors brings authentic taste with modern presentation. Highly recommended!",
   },
   {
     name: "Antoinette Mukamana",
-    image: "/public/2.jpg",
+    image: "/assets/2.jpg",
     quote: "Perfect place for family gatherings. The atmosphere is warm and the service is excellent.",
   },
   {
     name: "Grace Mutesa",
-    image: "/public/3.jpg",
+    image: "/assets/3.jpg",
     quote: "I travel often, but this is the best Rwandan restaurant I've experienced. Authentic and delicious!",
   },
   {
     name: "Sarah Keza",
-    image: "/public/4.jpg",
+    image: "/assets/4.jpg",
     quote: "The honey cake is incredible! Takes me back to my childhood. Will definitely return.",
   },
 ]
@@ -793,7 +793,7 @@ if ("IntersectionObserver" in window) {
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("/public/sw.js")
+      .register("/assets/sw.js")
       .then((registration) => {
         console.log("SW registered: ", registration)
       })
